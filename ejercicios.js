@@ -46,8 +46,7 @@ function operacionesBasicas(a, b) {
  * @returns {number} - Ãrea del rectÃ¡ngulo
  */
 function areaRectangulo(base, altura) {
-  base=0;
-  altura=0; 
+
   areaRectangulo=base*altura; 
   // TODO: Calcula y retorna el Ã¡rea (base * altura)
   return areaRectangulo;
@@ -78,15 +77,14 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
-  par= "par"
-  impar= "impar"
+
   if (numero%2==0){
-    par
+   return "par"
   }
   else {
-    impar
+   return "impar"
   }
-  return "par"||"impar";
+  
 }
 
 /**
