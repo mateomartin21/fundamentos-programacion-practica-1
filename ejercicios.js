@@ -161,14 +161,21 @@ function factorial(n) {
 
 
 /**
- * Ejercicio 3.2: Suma de nÃºmeros del 1 al n (4 puntos)
- * @param {number} n - NÃºmero lÃ­mite
+ * Ejercicio 3.2: Suma de números del 1 al n (4 puntos)
+ * @param {number} n - Número límite
  * @returns {number} - Suma de 1 + 2 + 3 + ... + n
  */
 function sumaHastaN(n) {
-  // TODO: Usa un bucle para sumar todos los nÃºmeros desde 1 hasta n
-  return 0;
+  suma = 0; // variable para acumular el resultado
+
+  // Usamos un bucle for para sumar los números del 1 al n
+  for (i = 1; i <= n; i++) {
+    suma = suma + i;
+  }
+
+  return suma;
 }
+
 
 /**
  * Ejercicio 3.3: Tabla de multiplicar (5 puntos)
