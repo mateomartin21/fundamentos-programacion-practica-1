@@ -179,15 +179,21 @@ function sumaHastaN(n) {
 
 /**
  * Ejercicio 3.3: Tabla de multiplicar (5 puntos)
- * @param {number} numero - NÃºmero para generar su tabla
+ * @param {number} numero - Número para generar su tabla
  * @returns {Array} - Array con los resultados de numero x 1 hasta numero x 10
  * Ejemplo: tablaMultiplicar(3) debe retornar [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
  */
 function tablaMultiplicar(numero) {
-  // TODO: Genera un array con la tabla de multiplicar
-  const tabla = [];
+   tabla = []; // arreglo vacío para guardar los resultados
+
+  // Generamos la tabla del número usando un bucle for
+  for ( i = 1; i <= 10; i++) {
+    tabla.push(numero * i); // agregamos el resultado al array
+  }
+
   return tabla;
 }
+
 
 /**
  * Ejercicio 3.4: NÃºmeros pares hasta n (6 puntos)
