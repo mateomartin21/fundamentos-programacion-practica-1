@@ -61,8 +61,9 @@ function areaRectangulo(base, altura) {
  * @returns {number} - Temperatura en Fahrenheit
  */
 function celsiusAFahrenheit(celsius) {
+  fahrenheit= celsius*9/5+32; 
   // TODO: Implementa la conversiÃ³n
-  return 0;
+  return fahrenheit;
 }
 
 // ============================================
