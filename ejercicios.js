@@ -141,16 +141,24 @@ function clasificarEdad(edad) {
 // ============================================
 
 /**
+/**
  * Ejercicio 3.1: Factorial (5 puntos)
- * Calcula el factorial de un nÃºmero (n! = n * (n-1) * (n-2) * ... * 1)
+ * Calcula el factorial de un número (n! = n * (n-1) * (n-2) * ... * 1)
  * Ejemplo: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120
- * @param {number} n - NÃºmero entero positivo
+ * @param {number} n - Número entero positivo
  * @returns {number} - Factorial de n
  */
 function factorial(n) {
-  // TODO: Implementa usando un bucle for
-  return 1;
+  resultado = 1; // usamos var en lugar de let
+
+  // Implementación con un bucle for
+  for (var i = 1; i <= n; i++) {
+    resultado = resultado * i;
+  }
+
+  return resultado;
 }
+
 
 /**
  * Ejercicio 3.2: Suma de nÃºmeros del 1 al n (4 puntos)
