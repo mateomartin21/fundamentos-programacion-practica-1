@@ -226,7 +226,8 @@ function sumaArray(numeros) {
   for (let i = 0; i < numeros.length; i++) {
     suma += numeros[i];
   }
-  return suma;
+  return suma; 
+  //Resuelto 
 }
 
 /**
