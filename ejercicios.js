@@ -196,16 +196,21 @@ function tablaMultiplicar(numero) {
 
 
 /**
- * Ejercicio 3.4: NÃºmeros pares hasta n (6 puntos)
- * @param {number} n - NÃºmero lÃ­mite
- * @returns {Array} - Array con todos los nÃºmeros pares desde 2 hasta n
+ * Ejercicio 3.4: Números pares hasta n (6 puntos)
+ * @param {number} n - Número límite
+ * @returns {Array} - Array con todos los números pares desde 2 hasta n
  * Ejemplo: numerosPares(10) debe retornar [2, 4, 6, 8, 10]
  */
 function numerosPares(n) {
-  // TODO: Crea un array con todos los nÃºmeros pares hasta n
-  const pares = [];
+  pares = [];
+  for (let i = 2; i <= n; i++) {
+    if (i % 2 === 0) {
+      pares.push(i);
+    }
+  }
   return pares;
 }
+
 
 // ============================================
 // SECCIÃ“N 4: ARRAYS (25 puntos)
@@ -213,12 +218,15 @@ function numerosPares(n) {
 
 /**
  * Ejercicio 4.1: Suma de elementos de un array (4 puntos)
- * @param {Array<number>} numeros - Array de nÃºmeros
+ * @param {Array<number>} numeros - Array de números
  * @returns {number} - Suma de todos los elementos
  */
 function sumaArray(numeros) {
-  // TODO: Suma todos los elementos del array
-  return 0;
+  let suma = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+  }
+  return suma;
 }
 
 /**
