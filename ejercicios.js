@@ -336,13 +336,12 @@ function sumaMatriz(matriz) {
 /**
  * Ejercicio 5.3: Obtener una fila (5 puntos)
  * @param {Array<Array<number>>} matriz - Matriz
- * @param {number} indiceFila - Ãndice de la fila (empezando en 0)
+ * @param {number} indiceFila - Índice de la fila (empezando en 0)
  * @returns {Array<number>} - La fila especificada
  * Ejemplo: obtenerFila([[1, 2], [3, 4], [5, 6]], 1) debe retornar [3, 4]
  */
 function obtenerFila(matriz, indiceFila) {
-  // TODO: Retorna la fila indicada
-  return [];
+  return matriz[indiceFila];
 }
 
 /**
