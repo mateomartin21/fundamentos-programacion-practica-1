@@ -319,14 +319,18 @@ function crearMatriz(filas, columnas) {
 
 /**
  * Ejercicio 5.2: Suma de elementos de una matriz (6 puntos)
- * @param {Array<Array<number>>} matriz - Matriz de nÃºmeros
+ * @param {Array<Array<number>>} matriz - Matriz de números
  * @returns {number} - Suma de todos los elementos
  * Ejemplo: sumaMatriz([[1, 2], [3, 4]]) debe retornar 10
  */
 function sumaMatriz(matriz) {
-  // TODO: Suma todos los elementos de la matriz
-  // NecesitarÃ¡s dos bucles: uno para las filas y otro para las columnas
-  return 0;
+  let suma = 0;
+  for (let i = 0; i < matriz.length; i++) {
+    for (let j = 0; j < matriz[i].length; j++) {
+      suma += matriz[i][j];
+    }
+  }
+  return suma;
 }
 
 /**
